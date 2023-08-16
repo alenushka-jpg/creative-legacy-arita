@@ -441,3 +441,62 @@ ul {
   height: 100%;
   background-color: #B1B3B2;
 }
+
+.preloader__back {
+  font-family: 'Merriweather', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 360px;
+  line-height: 453px;
+  color: #fff;
+  /* opacity: 0; */
+  transform: translateX(7%);
+  transition: opacity 0.3s ease-in-out;
+  animation: preloader 20s linear;
+}
+
+
+@keyframes preloader {
+  0% {
+    transform: translateX(7%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.preloader__forward {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Merriweather', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 91px;
+  transform: translate(-50%, -20%);
+  /* opacity: 0; */
+  transition: opacity 0.3s cubic-bezier(0.770, 0.125, 0.265, 1.040), transform 0.3s cubic-bezier(0.770, 0.125, 0.265, 1.040);
+}
+
+.preloader__background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 330px;
+  height: 220px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.preloader__background::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  /* transition: width 0.7s cubic-bezier(0.770, 0.125, 0.265, 1.040); */
+}
