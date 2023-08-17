@@ -2,10 +2,12 @@
 
 const init = () => {
   const showNextSlide = () => {
+    bgSlides('down');
     console.log('next');
   }
 
   const showPrevSlide = () => {
+    bgSlides('up');
     console.log('prev');
   }
 
@@ -29,7 +31,6 @@ const init = () => {
             helperInput.value = 1;
           }, 1500);
         }
-
       } else {
         if (helperInput.value == '1') {
           console.log('scroll down');
