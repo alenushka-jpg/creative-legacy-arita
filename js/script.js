@@ -1,6 +1,22 @@
 // функция которая вызывает все остальное
 
 const init = () => {
+  window.onload = function() {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('preloader-animation');
+
+    setTimeout(() => {
+      preloader.classList.remove('preloader-animation');
+      preloader.classList.add('preloader-hidden');
+    }, 3000);
+
+    setTimeout(() => {
+      // startAnimation();
+      preloader.classList.add('preloader-none');
+    }, 3200);
+  }
+
+
   const showNextSlide = () => {
     bgSlides('down');
     console.log('next');
