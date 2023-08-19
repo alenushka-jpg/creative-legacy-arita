@@ -428,6 +428,22 @@ ul {
   transition: opacity 0.3s ease-in-out;
 }
 
+.view-visible .mouse__view {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.links-visible::after {
+  border: 4px solid #cdcdcd;
+  transform: translate(-50%, -50%) scale(0.5);
+  background-color: transporent;
+  transition: 0.3s;
+}
+
+.links-visible::before {
+  opacity: 0;
+}
+
 .preloader {
   position: fixed;
   left: 0;
