@@ -11,7 +11,7 @@ const init = () => {
     }, 3000);
 
     setTimeout(() => {
-      // startAnimation();
+      startAnimation();
       preloader.classList.add('preloader-none');
     }, 3200);
   }

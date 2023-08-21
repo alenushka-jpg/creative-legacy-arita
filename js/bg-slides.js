@@ -9,7 +9,7 @@ bgLinks.forEach(el => {
 const bgSlides = (direction) => {
   let itemClass = `slide-${slideCounter}`;
   if (direction == 'down') {
-    if (slideCounter < slideCount) {
+    if (slideCounter < slidesCount) {
       promoSlide.classList.remove(itemClass);//текущий класс
       slideCounter++;
 
