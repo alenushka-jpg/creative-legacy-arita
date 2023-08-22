@@ -12,7 +12,7 @@ let slideCounter = 1;
 const easing = BezierEasing(0.770, 0.125, 0.265, 1.040);
 
 const startComplete = () => {
-  bgItems.forEach(el => {
+  bgLinks.forEach(el => {
     el.style.opacity = 1
   });
   shapeItems.forEach(el => {
