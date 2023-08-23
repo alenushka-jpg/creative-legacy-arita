@@ -10,14 +10,17 @@ const startAnimation = () => {
     y: 0,
     delay: 0.5
   })
+
   .to('.promo__title', 0.5, {
     opacity: 1,
     y: 0,
   }, '-=0.5')
+
   .to(currentText.querySelector('.slides-container__title'), 0.6, {
     opacity: 1,
     y: 0,
   }, '-=0.1')
+
   .to(currentText.querySelector('.designers-info'), 0.6, {
     opacity: 1,
     y: 0,

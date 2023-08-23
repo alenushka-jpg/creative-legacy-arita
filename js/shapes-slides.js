@@ -17,7 +17,8 @@ const shapesSlide = (direction) => {
     tl.from(nextShape, 0.5, {
       xPercent: 100
     })
-    tl.from(nextShape.querySelector('.shapes__item'), 0.5, {
+
+    .from(nextShape.querySelector('.shapes__item'), 0.5, {
       xPercent: -100,
       delay: -0.5
     });
