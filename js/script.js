@@ -20,12 +20,14 @@ const init = () => {
   const showNextSlide = () => {
     bgSlides('down');
     imagesSlides('down');
+    shapesSlide('down');
     console.log('next');
   }
 
   const showPrevSlide = () => {
     bgSlides('up');
     imagesSlides('up');
+    shapesSlide('up');
     console.log('prev');
   }
 
