@@ -13,17 +13,14 @@ const textAnimation = (direction) => {
       opacity: 0,
       y: 100
     })
-
     .to(currentSlide.querySelector('.designers-info'), 0.6, {
       opacity: 0,
       y: 100
     }, '-=0.6')
-
     .to(nextSlide.querySelector('.slides-container__title'), 0.6, {
       opacity: 1,
       y: 0
     }, '-=0.1')
-
     .to(nextSlide.querySelector('.designers-info'), 0.6, {
       opacity: 1,
       y: 0

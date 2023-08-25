@@ -1,5 +1,4 @@
 // функция которая вызывает все остальное
-
 const init = () => {
   window.onload = function() {
     const preloader = document.querySelector('.preloader');
@@ -16,13 +15,11 @@ const init = () => {
     }, 3200);
   }
 
-
   const showNextSlide = () => {
     bgSlides('down');
     imagesSlides('down');
     shapesSlide('down');
     textAnimation('down');
-    console.log('next');
   }
 
   const showPrevSlide = () => {
@@ -30,7 +27,6 @@ const init = () => {
     imagesSlides('up');
     shapesSlide('up');
     textAnimation('up');
-    console.log('prev');
   }
 
   if (window.innerWidth >= 768) {
@@ -46,7 +42,6 @@ const init = () => {
 
       if (delta > 0) {
         if (helperInput.value == '1') {
-          console.log('scroll up');
           helperInput.value = 0;
           showPrevSlide();
           setTimeout(() => {
@@ -55,7 +50,6 @@ const init = () => {
         }
       } else {
         if (helperInput.value == '1') {
-          console.log('scroll down');
           helperInput.value = 0;
           showNextSlide();
           setTimeout(() => {
@@ -63,15 +57,15 @@ const init = () => {
           }, 1500);
         }
       }
-    })
+    });
   } else {
     document.addEventListener('swiped-left', () => {
       showNextSlide();
     });
-    document.addEventListener('swiped-left', () => {
+    document.addEventListener('swiped-right', () => {
       showPrevSlide();
     });
   }
-}
+};
 
 init();
